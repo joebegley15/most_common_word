@@ -6,7 +6,6 @@ function mostCommonWord(str) {
 		word = word.toLowerCase();
 		wordCount[word] = wordCount[word] + 1 || 1;
 	})
-	console.log(wordCount);
 	return Object.keys(wordCount).reduce((currentMax,element) => wordCount[element] > wordCount[currentMax] ? element : currentMax);
 }
 
